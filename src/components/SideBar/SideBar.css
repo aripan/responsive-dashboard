@@ -1,0 +1,16 @@
+.side-bar-container {
+  margin: 1.5em;
+}
+
+.side-bar-dropdown {
+  margin-bottom: 2em;
+}
+
+/* .dropdown-icon {
+  color: red;
+  transform: translate(-100px);
+} */
+
+ul li {
+  list-style: none;
+}
