@@ -20,3 +20,20 @@
   grid-template-areas: "bottom-left bottom-right";
   height: 100%;
 }
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+  .bottom-right {
+    display: none;
+  }
+
+  .bottom-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "bottom-left";
+  }
+
+  .bottom-left {
+    height: 10rem;
+    margin: 0.5em;
+  }
+}

@@ -48,17 +48,17 @@
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
-/* @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .top-bar-section {
     height: 10vh;
   }
   .title-section {
-    height: 35vh;
+    height: 80vh;
   }
   .middle-section {
-    height: 35vh;
+    height: 50vh;
   }
   .bottom-section {
-    height: 20vh;
+    height: 28vh;
   }
-} */
+}

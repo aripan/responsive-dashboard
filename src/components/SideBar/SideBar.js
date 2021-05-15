@@ -48,6 +48,7 @@ const SideBar = () => {
         />
         {/* <Select defaultValue={dropdownOptions[0]} options={dropdownOptions} />{" "} */}
         <select
+          defaultValue="Home"
           style={{
             display: "flex",
             justifyContent: "space-around",
@@ -55,9 +56,7 @@ const SideBar = () => {
             marginLeft: "-120px",
           }}
         >
-          <option value="" selected="selected">
-            Home
-          </option>
+          <option value="Home">Home</option>
           <option>Email</option>
           <option>Chat</option>
           <option>Todo</option>

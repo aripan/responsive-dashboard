@@ -48,4 +48,8 @@
   .top-bar-username {
     display: none;
   }
+
+  .top-bar-container {
+    margin: 0.5em;
+  }
 }

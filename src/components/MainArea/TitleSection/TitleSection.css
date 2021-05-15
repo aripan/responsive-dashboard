@@ -93,3 +93,33 @@
     margin: 0 0.5rem;
   }
 }
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+  .title-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 12rem 20rem;
+    grid-template-areas:
+      "title-heading"
+      "title-items";
+  }
+
+  .title-items-bottom {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+
+  .title-items-bottom-one,
+  .title-items-bottom-two,
+  .title-items-bottom-three,
+  .title-items-bottom-four {
+    justify-content: flex-start;
+    margin: 0 1rem;
+  }
+
+  .title-heading,
+  .title-items {
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+}

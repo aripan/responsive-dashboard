@@ -63,6 +63,7 @@
     height: 16vh;
     grid-template-columns: 1fr 1fr 2fr;
     grid-template-areas: "one two three three";
+    margin: 1em 1em 0.5em 1em;
   }
 
   .middle-left-one {
@@ -78,5 +79,40 @@
 
   .middle-right {
     height: 10vh;
+    margin: 0.5em 1em 1em 1em;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+  .middle-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "middle-left"
+      "middle-right";
+  }
+
+  .middle-left {
+    height: 30vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "one two"
+      "three three";
+    margin: 0.5em;
+  }
+
+  .middle-left-one {
+    margin: 0 0.5em 0.5em 0;
+  }
+
+  .middle-left-two {
+    margin: 0 0 0.5em 0.5em;
+  }
+  .middle-left-three {
+    margin: 0.5em 0 0 0;
+  }
+  .middle-right {
+    height: 15vh;
+    margin: 0.5em;
   }
 }
