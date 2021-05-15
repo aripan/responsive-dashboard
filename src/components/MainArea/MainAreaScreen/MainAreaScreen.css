@@ -1,0 +1,33 @@
+.top-bar-section {
+  grid-area: top-bar;
+  border: 1px solid black;
+  height: 10vh;
+}
+.title-section {
+  grid-area: title-section;
+  border: 1px solid black;
+  height: 20vh;
+}
+.middle-section {
+  grid-area: middle-section;
+  border: 1px solid black;
+  height: 35vh;
+}
+.bottom-section {
+  grid-area: bottom-section;
+  border: 1px solid black;
+  height: 25vh;
+}
+
+.main-area-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "top-bar"
+    "title-section"
+    "middle-section"
+    "bottom-section";
+
+  margin: 1.5rem;
+}

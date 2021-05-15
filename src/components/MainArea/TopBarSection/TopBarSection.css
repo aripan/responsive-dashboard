@@ -1,0 +1,12 @@
+.top-bar-container {
+  margin: 1em 1em 0 1em;
+}
+
+.top-bar-content {
+  border: 1px solid tomato;
+  border-radius: 0.5em;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

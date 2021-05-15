@@ -1,0 +1,22 @@
+.bottom-left {
+  grid-area: bottom-left;
+  border: 1px solid tomato;
+  border-radius: 0.5em;
+  margin: 1em 0.5em 1em 1em;
+}
+
+.bottom-right {
+  grid-area: bottom-right;
+  border: 1px solid tomato;
+  border-radius: 0.5em;
+  margin: 1em 1em 1em 0.5em;
+}
+
+.bottom-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  /* column-gap: 1em; */
+  grid-template-areas: "bottom-left bottom-right";
+  height: 100%;
+}

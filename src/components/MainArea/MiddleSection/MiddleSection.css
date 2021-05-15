@@ -1,0 +1,50 @@
+.middle-left {
+  grid-area: middle-left;
+  border: 1px solid tomato;
+  border-radius: 0.5em;
+  margin: 1em 0.5em 1em 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "one two"
+    "three three";
+}
+
+.middle-left-one {
+  grid-area: one;
+  border: 1px solid violet;
+  border-radius: 0.5em;
+  margin: 0.5em 0.25em 0.25em 0.5em;
+}
+.middle-left-two {
+  grid-area: two;
+  border: 1px solid violet;
+  border-radius: 0.5em;
+  margin: 0.5em 0.5em 0.25em 0.25em;
+}
+.middle-left-three {
+  grid-area: three;
+  border: 1px solid violet;
+  border-radius: 0.5em;
+  margin: 0.25em 0.5em 0.5em 0.5em;
+}
+
+.middle-right {
+  grid-area: middle-right;
+  border: 1px solid tomato;
+  border-radius: 0.5em;
+  margin: 1em 1em 1em 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  /* column-gap: 1em; */
+  grid-template-areas: "middle-left middle-right";
+  height: 100%;
+}

@@ -1,0 +1,30 @@
+.title-heading {
+  grid-area: title-heading;
+  border: 1px solid tomato;
+  margin: 1em 0.5em 1em 1em;
+  padding: 0 0.5em;
+  border-radius: 0.5em;
+}
+
+.title-heading span {
+  font-weight: 700;
+}
+.title-heading p {
+  font-size: 12px;
+}
+
+.title-items {
+  grid-area: title-items;
+  border: 1px solid tomato;
+  margin: 1em 1em 1em 0.5em;
+  border-radius: 0.5em;
+}
+
+.title-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  /* column-gap: 1em; */
+  grid-template-areas: "title-heading title-items";
+  height: 100%;
+}
