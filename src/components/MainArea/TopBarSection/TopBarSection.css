@@ -6,7 +6,24 @@
   border: 1px solid tomato;
   border-radius: 0.5em;
   height: 3rem;
+  padding: 0 1rem;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar-icon {
+  padding: 0.2rem;
+}
+
+.top-bar-content-right {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.top-bar-content-right p {
+  font-size: 14px;
+  margin-left: 1em;
 }
