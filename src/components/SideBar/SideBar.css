@@ -6,11 +6,24 @@
   margin-bottom: 2em;
 }
 
+.side-bar-icon {
+  margin-right: 0.8rem;
+}
+
+.side-bar-new-button {
+  /* background-color: #ddd; */
+  border: none;
+  color: black;
+  padding: 4px 10px;
+  text-align: center;
+  margin: 0 10px;
+  border-radius: 1rem;
+}
 /* .dropdown-icon {
   color: red;
   transform: translate(-100px);
 } */
 
-ul li {
+/* ul li {
   list-style: none;
-}
+} */

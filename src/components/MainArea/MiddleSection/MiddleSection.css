@@ -15,19 +15,19 @@
   grid-area: one;
   border: 1px solid violet;
   border-radius: 0.5em;
-  margin: 0.5em 0.25em 0.25em 0.5em;
+  margin: 0 0.5em 0.5em 0;
 }
 .middle-left-two {
   grid-area: two;
   border: 1px solid violet;
   border-radius: 0.5em;
-  margin: 0.5em 0.5em 0.25em 0.25em;
+  margin: 0 0 0.5em 0.5em;
 }
 .middle-left-three {
   grid-area: three;
   border: 1px solid violet;
   border-radius: 0.5em;
-  margin: 0.25em 0.5em 0.5em 0.5em;
+  margin: 0.5em 0 0 0;
 }
 
 .middle-right {
