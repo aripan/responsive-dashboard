@@ -28,6 +28,37 @@
     "title-section"
     "middle-section"
     "bottom-section";
-
-  /* margin: 1.5rem; */
 }
+
+/* Media Queries */
+/* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 768px) {
+  .top-bar-section {
+    height: 9vh;
+  }
+  .title-section {
+    height: 25vh;
+  }
+  .middle-section {
+    height: 35vh;
+  }
+  .bottom-section {
+    height: 30vh;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* @media screen and (max-width: 576px) {
+  .top-bar-section {
+    height: 10vh;
+  }
+  .title-section {
+    height: 35vh;
+  }
+  .middle-section {
+    height: 35vh;
+  }
+  .bottom-section {
+    height: 20vh;
+  }
+} */

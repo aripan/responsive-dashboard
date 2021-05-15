@@ -15,3 +15,30 @@
   grid-template-areas: "side main main main main";
   height: 100vh;
 }
+
+/* Media Queries */
+/* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 768px) {
+  .side-bar {
+    display: none;
+  }
+
+  .App {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main";
+    width: 100vw;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+  .side-bar {
+    display: none;
+  }
+
+  .App {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main";
+    width: 100vw;
+  }
+}

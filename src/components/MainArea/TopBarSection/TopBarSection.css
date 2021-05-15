@@ -13,6 +13,9 @@
   align-items: center;
 }
 
+.menu-btn {
+  visibility: hidden;
+}
 .top-bar-icon {
   padding: 0.3rem;
 }
@@ -26,4 +29,23 @@
 .top-bar-content-right p {
   font-size: 14px;
   margin-left: 1em;
+}
+
+/* Media Queries */
+/* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 768px) {
+  .top-bar-content-left {
+    display: none;
+  }
+
+  .menu-btn {
+    visibility: visible;
+  }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+  .top-bar-username {
+    display: none;
+  }
 }

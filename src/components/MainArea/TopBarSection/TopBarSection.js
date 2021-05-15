@@ -9,6 +9,7 @@ import shoppingCart from "@iconify-icons/feather/shopping-cart";
 import starIcon from "@iconify-icons/feather/star";
 import searchIcon from "@iconify-icons/feather/search";
 import bellIcon from "@iconify-icons/feather/bell";
+import menuOutlined from "@iconify-icons/ant-design/menu-outlined";
 
 const TopBarSection = () => {
   return (
@@ -21,6 +22,9 @@ const TopBarSection = () => {
           <InlineIcon icon={checkSquare} className="top-bar-icon" />
           <InlineIcon icon={starIcon} className="top-bar-icon" />
         </div>
+        <span className="menu-btn">
+          <InlineIcon icon={menuOutlined} className="top-bar-icon" />
+        </span>
         <div className="top-bar-content-right">
           <div>
             <InlineIcon icon={searchIcon} className="top-bar-icon" />
@@ -28,7 +32,7 @@ const TopBarSection = () => {
             <InlineIcon icon={bellIcon} className="top-bar-icon" />
           </div>
 
-          <p>
+          <p className="top-bar-username">
             <span style={{ fontWeight: "700" }}>Username</span> <br />
             <span style={{ marginLeft: "25px" }}>admin</span>
           </p>

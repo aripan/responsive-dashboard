@@ -48,3 +48,35 @@
   grid-template-areas: "middle-left middle-right";
   height: 100%;
 }
+
+/* Media Queries */
+/* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 768px) {
+  .middle-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "middle-left"
+      "middle-right";
+  }
+
+  .middle-left {
+    height: 16vh;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: "one two three three";
+  }
+
+  .middle-left-one {
+    margin: 0 0.5em 0 0;
+  }
+
+  .middle-left-two {
+    margin: 0 0.5em 0 0.5em;
+  }
+  .middle-left-three {
+    margin: 0 0 0 0.5em;
+  }
+
+  .middle-right {
+    height: 10vh;
+  }
+}
