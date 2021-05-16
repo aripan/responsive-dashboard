@@ -25,7 +25,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
-  /* column-gap: 1em; */
   grid-template-areas: "title-heading title-items";
   height: 100%;
 }

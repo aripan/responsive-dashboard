@@ -1,22 +1,18 @@
 .top-bar-section {
   grid-area: top-bar;
-
-  height: 10vh;
+  height: 4em;
 }
 .title-section {
   grid-area: title-section;
-
-  height: 20vh;
+  height: 10em;
 }
 .middle-section {
   grid-area: middle-section;
-
-  height: 38vh;
+  height: 17em;
 }
 .bottom-section {
   grid-area: bottom-section;
-
-  height: 30vh;
+  height: 14rem;
 }
 
 .main-area-container {
@@ -34,31 +30,31 @@
 /* Small devices (landscape phones, less than 768px) */
 @media screen and (max-width: 768px) {
   .top-bar-section {
-    height: 9vh;
+    height: 5em;
   }
   .title-section {
-    height: 25vh;
+    height: 14em;
   }
   .middle-section {
-    height: 35vh;
+    height: 18em;
   }
   .bottom-section {
-    height: 30vh;
+    height: 15em;
   }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media screen and (max-width: 576px) {
   .top-bar-section {
-    height: 10vh;
+    height: 4em;
   }
   .title-section {
-    height: 80vh;
+    height: 32em;
   }
   .middle-section {
-    height: 50vh;
+    height: 20em;
   }
   .bottom-section {
-    height: 28vh;
+    height: 12em;
   }
 }

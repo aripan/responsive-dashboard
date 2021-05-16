@@ -2,14 +2,14 @@
   grid-area: bottom-left;
   background-color: #283046;
   border-radius: 0.5em;
-  margin: 1em 0.5em 1em 1em;
+  margin: 0.5em 0.5em 1em 1em;
 }
 
 .bottom-right {
   grid-area: bottom-right;
   background-color: #283046;
   border-radius: 0.5em;
-  margin: 1em 1em 1em 0.5em;
+  margin: 0.5em 1em 1em 0.5em;
 }
 
 .bottom-container {

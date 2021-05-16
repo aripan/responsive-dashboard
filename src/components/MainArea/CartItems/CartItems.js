@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./CartItems.css";
-import { Icon, InlineIcon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import xIcon from "@iconify-icons/feather/x";
 
 const CartItems = ({
@@ -122,23 +122,23 @@ const CartItems = ({
                 <div>{item.name}</div>
                 <div className="cart-items-count">
                   <span
-                    className="cart-items-count-increment"
-                    onClick={() => {
-                      handleIncrement(index, item.count, item.price);
-                    }}
-                  >
-                    +
-                  </span>
-                  <span>|</span>
-                  <span>{item.count}</span>
-                  <span>|</span>
-                  <span
                     className="cart-items-count-decrement"
                     onClick={() => {
                       handleDecrement(index, item.count, item.price);
                     }}
                   >
                     -
+                  </span>
+                  <span>|</span>
+                  <span>{item.count}</span>
+                  <span>|</span>
+                  <span
+                    className="cart-items-count-increment"
+                    onClick={() => {
+                      handleIncrement(index, item.count, item.price);
+                    }}
+                  >
+                    +
                   </span>
                 </div>
                 <div onMouseOver={handleMouseOver}>
@@ -165,7 +165,9 @@ const CartItems = ({
             <span style={{ color: "#7367f0" }}>${itemTotalPrice}</span>
           </div>
           <div className="cart-checkout-btn">
-            <button onClick={handleCheckout}>Checkout</button>
+            {items.length > 0 && (
+              <button onClick={handleCheckout}>Checkout</button>
+            )}
           </div>
         </div>
       </div>
