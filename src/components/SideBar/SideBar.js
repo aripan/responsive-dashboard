@@ -102,9 +102,7 @@ const SideBar = () => {
       <p>
         <InlineIcon icon={creditCard} className="side-bar-icon" />
         Cards
-        <button className="side-bar-new-button" style={{ marginLeft: "40px" }}>
-          new
-        </button>
+        <button className="side-bar-new-button">new</button>
         <InlineIcon icon={arrowRightAlt2} />
       </p>
     </div>

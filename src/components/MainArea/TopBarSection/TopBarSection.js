@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./TopBarSection.css";
 import { InlineIcon } from "@iconify/react";
 import mailIcon from "@iconify-icons/feather/mail";
@@ -10,8 +10,23 @@ import starIcon from "@iconify-icons/feather/star";
 import searchIcon from "@iconify-icons/feather/search";
 import bellIcon from "@iconify-icons/feather/bell";
 import menuOutlined from "@iconify-icons/ant-design/menu-outlined";
+import CartItems from "../CartItems/CartItems";
+// import shoppingItems from "../../../data/shopping_cart_items.json";
 
 const TopBarSection = () => {
+  const [allCartItems, setAllCartItems] = useState([]);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    fetch("shopping_cart_items.json")
+      .then((res) => res.json())
+      .then((data) => setAllCartItems(data.shopping_cart_items));
+  }, []);
+
+  const handleShoppingCart = () => {
+    setIsVisible(!isVisible);
+  };
+
   return (
     <div className="top-bar-container">
       <div className="top-bar-content">
@@ -28,7 +43,11 @@ const TopBarSection = () => {
         <div className="top-bar-content-right">
           <div>
             <InlineIcon icon={searchIcon} className="top-bar-icon" />
-            <InlineIcon icon={shoppingCart} className="top-bar-icon" />
+            <InlineIcon
+              icon={shoppingCart}
+              className="top-bar-icon"
+              onClick={handleShoppingCart}
+            />
             <InlineIcon icon={bellIcon} className="top-bar-icon" />
           </div>
 
@@ -37,6 +56,9 @@ const TopBarSection = () => {
             <span style={{ marginLeft: "25px" }}>admin</span>
           </p>
         </div>
+      </div>
+      <div className="top-bar-cart">
+        {isVisible && <CartItems allCartItems={allCartItems} />}
       </div>
     </div>
   );

@@ -18,6 +18,7 @@
 }
 .top-bar-icon {
   padding: 0.3rem;
+  cursor: pointer;
 }
 
 .top-bar-content-right {
@@ -30,6 +31,10 @@
   font-size: 14px;
   margin-left: 1em;
 }
+
+/* #top-bar-cart {
+  display: none;
+} */
 
 /* Media Queries */
 /* Small devices (landscape phones, less than 768px) */
