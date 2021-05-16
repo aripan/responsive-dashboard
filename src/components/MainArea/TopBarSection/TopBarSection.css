@@ -32,9 +32,24 @@
   margin-left: 1em;
 }
 
-/* #top-bar-cart {
-  display: none;
-} */
+.cart-notification {
+  position: relative;
+}
+
+.cart-items-length {
+  position: absolute;
+  font-size: 16px;
+  right: -6px;
+  top: -10px;
+  color: #000;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Media Queries */
 /* Small devices (landscape phones, less than 768px) */

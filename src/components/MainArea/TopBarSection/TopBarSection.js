@@ -43,11 +43,18 @@ const TopBarSection = () => {
         <div className="top-bar-content-right">
           <div>
             <InlineIcon icon={searchIcon} className="top-bar-icon" />
-            <InlineIcon
-              icon={shoppingCart}
-              className="top-bar-icon"
-              onClick={handleShoppingCart}
-            />
+            <span className="cart-notification">
+              {" "}
+              <InlineIcon
+                icon={shoppingCart}
+                className="top-bar-icon"
+                onClick={handleShoppingCart}
+              />
+              {isVisible && (
+                <span className="cart-items-length">{allCartItems.length}</span>
+              )}
+            </span>
+
             <InlineIcon icon={bellIcon} className="top-bar-icon" />
           </div>
 
