@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./CartItems.css";
+import { Icon, InlineIcon } from "@iconify/react";
+import xIcon from "@iconify-icons/feather/x";
 
-const CartItems = ({ allCartItems }) => {
+const CartItems = ({
+  allCartItems,
+  setAllCartItems,
+  isVisible,
+  setIsVisible,
+}) => {
   const [items, setItems] = useState([...allCartItems]);
   const [totalItems, setTotalItems] = useState(4);
   const [itemTotalPrice, setItemTotalPrice] = useState(2139.26);
+  const [confirmationMessage, setConfirmationMessage] = useState(false);
 
   const handleIncrement = (index, number, price) => {
     items[index].count = number + 1;
@@ -44,6 +52,25 @@ const CartItems = ({ allCartItems }) => {
     }
   };
 
+  const handleMouseOver = (e) => {
+    e.target.parentNode.children[0].style.display = "inline";
+  };
+
+  const handleCrossBtn = (name) => {
+    const filteredItems = items.filter((item) => item.name !== name);
+    setItems(filteredItems);
+    setAllCartItems(filteredItems);
+    setTotalItems(filteredItems.length);
+  };
+
+  const handleCheckout = () => {
+    const checkedOutItems = [];
+    setItems(checkedOutItems);
+    setAllCartItems(checkedOutItems);
+    setTotalItems(checkedOutItems.length);
+    setConfirmationMessage(!confirmationMessage);
+  };
+
   useEffect(() => {
     const itemsPrice = [];
     items.forEach((it) => itemsPrice.push(it.price));
@@ -52,8 +79,33 @@ const CartItems = ({ allCartItems }) => {
     setItemTotalPrice(updatedPrice);
   }, [items]);
 
+  const handleConfirmationMessage = () => {
+    setConfirmationMessage(!confirmationMessage);
+    setIsVisible(!isVisible);
+  };
+
   return (
     <div className="cart-container">
+      {confirmationMessage && (
+        <span className="checkout-confirmation">
+          <Icon
+            icon={xIcon}
+            style={{
+              fontSize: "20px",
+              marginLeft: "250px",
+              border: "1px solid black",
+              borderRadius: "50%",
+              cursor: "pointer",
+            }}
+            onClick={handleConfirmationMessage}
+          />
+          <h4>
+            Your orders have been placed successfully. <br /> You will be
+            notified soon with all necessary details
+          </h4>
+        </span>
+      )}
+
       <div className="cart">
         <div className="cart-title">
           <p>My Cart</p>
@@ -62,7 +114,7 @@ const CartItems = ({ allCartItems }) => {
         <hr />
         <div className="cart-items">
           {items.map((item, index) => (
-            <div key={index}>
+            <div key={index} className="cart-items-container">
               <div className="cart-items-list">
                 <div>{item.name}</div>
                 <div className="cart-items-count">
@@ -86,7 +138,18 @@ const CartItems = ({ allCartItems }) => {
                     -
                   </span>
                 </div>
-                <div style={{ minWidth: "70px" }}>${item.price}</div>
+                <div onMouseOver={handleMouseOver}>
+                  <span
+                    className="cart-item-close"
+                    onClick={() => {
+                      handleCrossBtn(item.name);
+                    }}
+                  >
+                    <Icon icon={xIcon} />
+                  </span>
+
+                  <div style={{ minWidth: "70px" }}>${item.price}</div>
+                </div>
               </div>
 
               <hr />
@@ -99,7 +162,7 @@ const CartItems = ({ allCartItems }) => {
             <span>${itemTotalPrice}</span>
           </div>
           <div className="cart-checkout-btn">
-            <button>Checkout</button>
+            <button onClick={handleCheckout}>Checkout</button>
           </div>
         </div>
       </div>

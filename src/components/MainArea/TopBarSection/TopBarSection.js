@@ -50,7 +50,7 @@ const TopBarSection = () => {
                 className="top-bar-icon"
                 onClick={handleShoppingCart}
               />
-              {isVisible && (
+              {isVisible && allCartItems.length > 0 && (
                 <span className="cart-items-length">{allCartItems.length}</span>
               )}
             </span>
@@ -65,7 +65,14 @@ const TopBarSection = () => {
         </div>
       </div>
       <div className="top-bar-cart">
-        {isVisible && <CartItems allCartItems={allCartItems} />}
+        {isVisible && (
+          <CartItems
+            allCartItems={allCartItems}
+            setAllCartItems={setAllCartItems}
+            isVisible={isVisible}
+            setIsVisible={setIsVisible}
+          />
+        )}
       </div>
     </div>
   );
