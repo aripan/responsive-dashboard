@@ -8,16 +8,32 @@
 
 .side-bar-icon {
   margin-right: 0.8rem;
+  color: #b4b7bd;
 }
 
 .side-bar-new-button {
   /* background-color: #ddd; */
   border: none;
-  color: black;
-  padding: 2px 6px;
+  color: #28c76f;
+  background-color: rgba(40, 199, 111, 0.12);
+  padding: 4px 10px;
   text-align: center;
-  margin: 0 0 0 50px;
+  margin: 0 0 0 40px;
   border-radius: 1rem;
+}
+
+.dropdown-notification {
+  width: 20px;
+  height: 20px;
+  color: #ff9f43;
+  background-color: rgba(255, 159, 67, 0.12);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-left: -220px;
+  z-index: 2;
 }
 /* .dropdown-icon {
   color: red;

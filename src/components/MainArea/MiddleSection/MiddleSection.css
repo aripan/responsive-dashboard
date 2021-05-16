@@ -1,6 +1,5 @@
 .middle-left {
   grid-area: middle-left;
-  border: 1px solid tomato;
   border-radius: 0.5em;
   margin: 1em 0.5em 1em 1em;
   display: grid;
@@ -13,26 +12,26 @@
 
 .middle-left-one {
   grid-area: one;
-  border: 1px solid violet;
+  background-color: #283046;
   border-radius: 0.5em;
   margin: 0 0.5em 0.5em 0;
 }
 .middle-left-two {
   grid-area: two;
-  border: 1px solid violet;
+  background-color: #283046;
   border-radius: 0.5em;
   margin: 0 0 0.5em 0.5em;
 }
 .middle-left-three {
   grid-area: three;
-  border: 1px solid violet;
+  background-color: #283046;
   border-radius: 0.5em;
   margin: 0.5em 0 0 0;
 }
 
 .middle-right {
   grid-area: middle-right;
-  border: 1px solid tomato;
+  background-color: #283046;
   border-radius: 0.5em;
   margin: 1em 1em 1em 0.5em;
   display: flex;

@@ -1,11 +1,11 @@
 .side-bar {
   grid-area: side;
-  border: 1px solid red;
+
+  background-color: #283046;
 }
 
 .main-area {
   grid-area: main;
-  border: 1px solid blue;
 }
 
 .App {

@@ -39,12 +39,13 @@ const SideBar = () => {
           borderRadius: "0.5em",
           fontSize: "16px",
           marginLeft: "-10px",
+          backgroundColor: "#161d31",
         }}
       >
         <InlineIcon
           icon={homeIcon}
           className="dropdown-icon"
-          style={{ marginLeft: "-60px" }}
+          style={{ marginLeft: "-80px", color: "#b4b7bd" }}
         />
         {/* <Select defaultValue={dropdownOptions[0]} options={dropdownOptions} />{" "} */}
         <select
@@ -53,7 +54,9 @@ const SideBar = () => {
             display: "flex",
             justifyContent: "space-around",
             border: "none",
-            marginLeft: "-120px",
+            marginLeft: "-170px",
+            backgroundColor: "#161d31",
+            color: "#d0d2d6",
           }}
         >
           <option value="Home">Home</option>
@@ -65,6 +68,7 @@ const SideBar = () => {
           <option>Feather</option>
           <option>Cards</option>
         </select>
+        <span className="dropdown-notification">2</span>
       </div>
 
       <h5>CATEGORY 1</h5>

@@ -35,7 +35,11 @@ const TopBarSection = () => {
           <InlineIcon icon={messageSquare} className="top-bar-icon" />
           <InlineIcon icon={mailIcon} className="top-bar-icon" />
           <InlineIcon icon={checkSquare} className="top-bar-icon" />
-          <InlineIcon icon={starIcon} className="top-bar-icon" />
+          <InlineIcon
+            icon={starIcon}
+            className="top-bar-icon"
+            style={{ color: "#ff9f43" }}
+          />
         </div>
         <span className="menu-btn">
           <InlineIcon icon={menuOutlined} className="top-bar-icon" />

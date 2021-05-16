@@ -1,21 +1,21 @@
 .top-bar-section {
   grid-area: top-bar;
-  border: 1px solid black;
+
   height: 10vh;
 }
 .title-section {
   grid-area: title-section;
-  border: 1px solid black;
+
   height: 20vh;
 }
 .middle-section {
   grid-area: middle-section;
-  border: 1px solid black;
+
   height: 38vh;
 }
 .bottom-section {
   grid-area: bottom-section;
-  border: 1px solid black;
+
   height: 30vh;
 }
 

@@ -3,7 +3,6 @@
 }
 
 .top-bar-content {
-  border: 1px solid tomato;
   border-radius: 0.5em;
   height: 3rem;
   padding: 0 1rem;
@@ -11,6 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #283046;
 }
 
 .menu-btn {
@@ -19,6 +19,7 @@
 .top-bar-icon {
   padding: 0.3rem;
   cursor: pointer;
+  color: #b4b7bd;
 }
 
 .top-bar-content-right {
@@ -44,11 +45,11 @@
   color: #000;
   width: 20px;
   height: 20px;
-  border: 1px solid black;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #7367f0;
 }
 
 /* Media Queries */

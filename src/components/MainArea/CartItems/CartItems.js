@@ -93,9 +93,12 @@ const CartItems = ({
             style={{
               fontSize: "20px",
               marginLeft: "250px",
-              border: "1px solid black",
+              width: "25px",
+              height: "25px",
+              backgroundColor: "#161d31",
               borderRadius: "50%",
               cursor: "pointer",
+              padding: "5px",
             }}
             onClick={handleConfirmationMessage}
           />
@@ -159,7 +162,7 @@ const CartItems = ({
         <div className="cart-checkout">
           <div className="cart-checkout-total">
             <span>Total</span>
-            <span>${itemTotalPrice}</span>
+            <span style={{ color: "#7367f0" }}>${itemTotalPrice}</span>
           </div>
           <div className="cart-checkout-btn">
             <button onClick={handleCheckout}>Checkout</button>
