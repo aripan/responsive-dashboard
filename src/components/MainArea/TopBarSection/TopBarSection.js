@@ -11,7 +11,6 @@ import searchIcon from "@iconify-icons/feather/search";
 import bellIcon from "@iconify-icons/feather/bell";
 import menuOutlined from "@iconify-icons/ant-design/menu-outlined";
 import CartItems from "../CartItems/CartItems";
-// import shoppingItems from "../../../data/shopping_cart_items.json";
 
 const TopBarSection = () => {
   const [allCartItems, setAllCartItems] = useState([]);

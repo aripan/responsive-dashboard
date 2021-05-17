@@ -87,6 +87,14 @@
     grid-template-areas: "title-heading title-heading title-items title-items";
   }
 
+  .title-heading {
+    margin: 0.25em 0.5em 0.25em 1em;
+  }
+
+  .title-items {
+    margin: 0.25em 1em 0.25em 0.5em;
+  }
+
   .title-heading,
   .title-items {
     padding: 1em;

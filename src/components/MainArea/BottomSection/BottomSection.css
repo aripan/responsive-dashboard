@@ -16,9 +16,23 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  /* column-gap: 1em; */
   grid-template-areas: "bottom-left bottom-right";
   height: 100%;
+}
+
+/* Media Queries */
+/* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width: 768px) {
+  .bottom-left {
+    margin: 0em 0.5em 1em 1em;
+  }
+
+  .bottom-right {
+    grid-area: bottom-right;
+    background-color: #283046;
+    border-radius: 0.5em;
+    margin: 0em 1em 1em 0.5em;
+  }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */

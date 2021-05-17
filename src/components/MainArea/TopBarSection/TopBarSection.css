@@ -62,6 +62,9 @@
   .menu-btn {
     visibility: visible;
   }
+  .top-bar-container {
+    margin: 1em 1em 0 1em;
+  }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */

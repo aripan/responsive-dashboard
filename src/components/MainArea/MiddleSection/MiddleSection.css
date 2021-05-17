@@ -43,7 +43,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
-  /* column-gap: 1em; */
   grid-template-areas: "middle-left middle-right";
   height: 100%;
 }
@@ -78,7 +77,7 @@
 
   .middle-right {
     height: 10vh;
-    margin: 0.5em 1em 1em 1em;
+    margin: 0.25em 1em 1em 1em;
   }
 }
 
